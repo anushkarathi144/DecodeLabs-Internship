@@ -1,0 +1,167 @@
+.body {
+    background-color: red;
+}
+
+.* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fce6f1;
+    color: #333;
+    line-height: 1.6;
+}
+
+.header {
+    height: 80px;
+    background: #f383c4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header-logo {
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.header-logo:hover {
+    transform: scale(1.08) rotate(5deg);
+}
+
+.logo-text {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #8a5164;
+}
+
+.about-section {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(to right, #ffe6f0, #d9f0ff);
+}
+
+.about-section h2 {
+    font-family: 'Georgia', serif;
+    text-align: center;
+    font-size: 45px;
+    color: #066b5e;
+    margin-bottom: 40px;
+    text-decoration: underline;
+}
+
+.about-section p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #555;
+}
+
+.footer {
+    background-color: #4a7c59;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+
+/* Responsive design for tablets and smaller screens */
+@media (max-width: 900px) {
+  .header {
+    padding: 20px 30px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 30px;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .flavor-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Responsive design for mobile screens */
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .navbar a {
+    display: inline-block;
+    margin: 6px;
+    font-size: 14px;
+  }
+
+  .hero {
+    padding: 40px 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-content h2 {
+    font-size: 24px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .hero-image img {
+    width: 230px;
+    height: 230px;
+  }
+
+  .info-section,
+  .flavors {
+    padding: 40px 20px;
+  }
+
+  .flavor-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .flavor-card img {
+    height: 160px;
+  }
+}

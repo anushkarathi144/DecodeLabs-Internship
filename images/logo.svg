@@ -1,0 +1,23 @@
+<svg viewBox="0 0 224 224" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="112" cy="112" r="110" fill="#E85A9F" stroke="#8B6F47" stroke-width="3"/>
+  
+  <!-- Cone -->
+  <polygon points="112,140 95,200 129,200" fill="#D4A574" stroke="#8B6F47" stroke-width="2"/>
+  <line x1="102" y1="150" x2="122" y2="150" stroke="#8B6F47" stroke-width="1" opacity="0.6"/>
+  <line x1="99" y1="165" x2="125" y2="165" stroke="#8B6F47" stroke-width="1" opacity="0.6"/>
+  <line x1="96" y1="180" x2="128" y2="180" stroke="#8B6F47" stroke-width="1" opacity="0.6"/>
+  
+  <!-- Ice cream scoops -->
+  <circle cx="112" cy="110" r="35" fill="#FFB6D9" stroke="#8B6F47" stroke-width="2"/>
+  <ellipse cx="112" cy="110" rx="30" ry="15" fill="#FF99C8" opacity="0.7"/>
+  
+  <circle cx="102" cy="85" r="28" fill="#FF99C8" stroke="#8B6F47" stroke-width="2"/>
+  <ellipse cx="102" cy="85" rx="24" ry="12" fill="#FF66B2" opacity="0.7"/>
+  
+  <circle cx="122" cy="70" r="25" fill="#FF66B2" stroke="#8B6F47" stroke-width="2"/>
+  <ellipse cx="122" cy="70" rx="21" ry="10" fill="#FF3399" opacity="0.7"/>
+  
+  <!-- Highlight on ice cream -->
+  <ellipse cx="108" cy="75" rx="8" ry="12" fill="white" opacity="0.4"/>
+</svg>

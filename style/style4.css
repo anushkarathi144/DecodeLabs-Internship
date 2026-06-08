@@ -1,0 +1,280 @@
+body {
+    background-color: red;
+}
+
+.* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fce6f1;
+    color: #333;
+    line-height: 1.6;
+}
+
+.header {
+    height: 80px;
+    background: #f383c4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header-logo {
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.header-logo:hover {
+    transform: scale(1.08) rotate(5deg);
+}
+
+.logo-text {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #8a5164;
+}
+
+.contact-section {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(to right, #ffe6f0, #d9f0ff);
+}
+
+.contact-section h2 {
+    font-family: 'Georgia', serif;
+    text-align: center;
+    font-size: 45px;
+    color: #066b5e;
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
+
+.contact-section p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 18px; 
+}
+
+.contact-section form {
+    margin-top: 30px;
+    display: inline-block;
+    text-align: left;
+    font-size: 18px;
+    list-style-type: none;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.input-label {
+    position: absolute;
+    top: -10px;
+    left: 16px;
+    display: inline-block;
+    background-color:rgb(250, 233, 236);
+    padding: 0 5px;
+    text-transform: uppercase;
+    color: #8b6f47;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 1px;
+    z-index: 1;
+}
+
+.contact-section input,
+.contact-section textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #d4a574;
+    border-radius: 25px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    background-color: #faf5f0;
+    box-sizing: border-box;
+}
+
+.contact-section button {
+    background-color: #f383c4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.contact-section button:hover {
+    background-color: #8a5164;
+    transition: all 0.3s ease;
+}
+
+.contact-section button:active {
+    transform: scale(0.98);
+}
+
+/* Form input focus and validation styles */
+.contact-section input:focus,
+.contact-section textarea:focus {
+    outline: none;
+    border-color: #f383c4;
+    box-shadow: 0 0 8px rgba(243, 131, 196, 0.3);
+    background-color: #fffbf9;
+}
+
+.contact-section input:invalid {
+    border-color: #ff6f91;
+}
+
+/* Error message styling */
+.error-message {
+    color: #ff6f91;
+    font-size: 12px;
+    margin-top: 5px;
+    display: block;
+    animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Success message styling */
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #c3e6cb;
+    animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.footer {
+    background-color: #4a7c59;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* Responsive design for tablets and smaller screens */
+@media (max-width: 900px) {
+  .header {
+    padding: 20px 30px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 30px;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .flavor-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+
+/* Responsive design for mobile screens */
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .navbar a {
+    display: inline-block;
+    margin: 6px;
+    font-size: 14px;
+  }
+
+  .hero {
+    padding: 40px 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-content h2 {
+    font-size: 24px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .hero-image img {
+    width: 230px;
+    height: 230px;
+  }
+
+  .info-section,
+  .flavors {
+    padding: 40px 20px;
+  }
+
+  .flavor-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .flavor-card img {
+    height: 160px;
+  }
+}
