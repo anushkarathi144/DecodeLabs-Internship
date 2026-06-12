@@ -1,17 +1,12 @@
-// ===========================
+
 // ICE CREAM WEBPAGE - INTERACTIVE JAVASCRIPT
-// ===========================
 // This script adds interactivity to the ice cream webpage including:
 // - Form validation and submission
 // - Flavor card interactions
 // - Dynamic content updates
 // - Local storage for favorites
 // - Button animations and feedback
-
-// ===========================
 // 1. FORM VALIDATION & SUBMISSION
-// ===========================
-
 document.addEventListener('DOMContentLoaded', function() {
     
     // Get the form element
@@ -57,11 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
-
-// ===========================
 // 2. FORM VALIDATION FUNCTIONS
-// ===========================
-
 function validateForm(name, email, message) {
     let isValid = true;
     
@@ -190,11 +181,7 @@ function clearSuccessMessage() {
         successMsg.remove();
     }
 }
-
-// ===========================
 // 3. LOCAL STORAGE FUNCTIONS
-// ===========================
-
 function saveFormData(formData) {
     try {
         let allSubmissions = JSON.parse(localStorage.getItem('formSubmissions')) || [];
@@ -225,11 +212,7 @@ function saveFlavor(flavorName) {
         console.error('Error saving flavor:', error);
     }
 }
-
-// ===========================
 // 4. FLAVOR CARD INTERACTIONS
-// ===========================
-
 function initializeFlavorCards() {
     const flavorCards = document.querySelectorAll('.flavor-card');
     
@@ -275,11 +258,7 @@ function showFlavorDetails(card) {
         card.style.backgroundColor = '';
     }, 500);
 }
-
-// ===========================
 // 5. BUTTON INTERACTIONS
-// ===========================
-
 function initializeButtons() {
     const buttons = document.querySelectorAll('button');
     
@@ -307,11 +286,7 @@ function initializeButtons() {
         });
     });
 }
-
-// ===========================
 // 6. NAVIGATION INTERACTIONS
-// ===========================
-
 function initializeNavigation() {
     const navLinks = document.querySelectorAll('.navbar a');
     
@@ -330,11 +305,7 @@ function initializeNavigation() {
         });
     });
 }
-
-// ===========================
-// 7. DYNAMIC CONTENT COUNTER
-// ===========================
-
+// 7. DYNAMIC CONTENT COUNTERq23
 function initializeDynamicCounter() {
     // Add a visitor counter to the footer
     const footer = document.querySelector('.footer');
@@ -356,11 +327,7 @@ function initializeDynamicCounter() {
         footer.appendChild(counter);
     }
 }
-
-// ===========================
 // 8. PAGE TRANSITION EFFECTS
-// ===========================
-
 function addPageTransitionEffects() {
     // Add fade-in animation to page content
     const sections = document.querySelectorAll('section, .info-section, .flavors-section, .contact-section, .about-section');
@@ -412,11 +379,7 @@ function addCSSAnimations() {
     `;
     document.head.appendChild(style);
 }
-
-// ===========================
 // 9. SUMMARY & STATS DISPLAY
-// ===========================
-
 function displayPageStats() {
     console.log('===== ICE CREAM WEBPAGE STATS =====');
     console.log('Favorite Flavors: ' + JSON.stringify(JSON.parse(localStorage.getItem('favoriteFlavorsList')) || []));
@@ -424,11 +387,7 @@ function displayPageStats() {
     console.log('Form Submissions: ' + (JSON.parse(localStorage.getItem('formSubmissions')) || []).length);
     console.log('===================================');
 }
-
-// ===========================
 // 10. MAIN INITIALIZATION
-// ===========================
-
 // Initialize all features when page loads
 window.addEventListener('load', function() {
     console.log('🍦 Sweet Scoop Webpage - Interactive Features Loaded!');
@@ -447,11 +406,7 @@ window.addEventListener('load', function() {
     // Display statistics
     displayPageStats();
 });
-
-// ===========================
 // 11. HERO IMAGE MOTION
-// ===========================
-
 function initializeHeroImageAnimation() {
     const heroImage = document.querySelector('.hero-image img');
     if (!heroImage) {
@@ -489,11 +444,7 @@ function initializeHeroImageAnimation() {
 window.addEventListener('beforeunload', function() {
     console.log('Thanks for visiting Sweet Scoop! Come back soon! 🍦');
 });
-
-// ===========================
 // KEYBOARD SHORTCUTS
-// ===========================
-
 document.addEventListener('keydown', function(event) {
     // Press '?' to show keyboard shortcuts
     if (event.key === '?') {
