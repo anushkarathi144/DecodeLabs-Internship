@@ -116,7 +116,7 @@ body {
 
 .contact-section input,
 .contact-section textarea {
-    width: 100%;
+    width: 400px;
     padding: 12px 16px;
     border: 2px solid #d4a574;
     border-radius: 25px;
